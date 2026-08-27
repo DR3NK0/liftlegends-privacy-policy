@@ -1,0 +1,845 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lift Legends — Privacy Policy</title>
+
+    <meta name="description" content="Privacy Policy for Lift Legends. Learn how Lift Legends handles account, gameplay, multiplayer, profile picture, camera, AI detection, and purchase-related data.">
+    <meta name="theme-color" content="#0b0d12">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #080a0f;
+            --bg-secondary: #0d1017;
+            --card: #11151d;
+            --card-hover: #151a23;
+            --border: rgba(255, 255, 255, 0.08);
+            --text: #f4f5f7;
+            --muted: #9ba3b0;
+            --accent: #8cff00;
+            --accent-dark: #5eaf00;
+            --accent-soft: rgba(140, 255, 0, 0.08);
+            --danger: #ff5c5c;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            background:
+                radial-gradient(
+                    circle at 80% 0%,
+                    rgba(140, 255, 0, 0.06),
+                    transparent 30%
+                ),
+                var(--bg);
+
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* ---------------- NAVIGATION ---------------- */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+
+            background: rgba(8, 10, 15, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 18px 24px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+            list-style: none;
+            font-size: 14px;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            transition: 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* ---------------- MAIN ---------------- */
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 70px 24px 100px;
+        }
+
+        .top-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            color: var(--accent);
+            background: var(--accent-soft);
+            border: 1px solid rgba(140, 255, 0, 0.15);
+
+            padding: 7px 13px;
+            border-radius: 999px;
+
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            margin-bottom: 22px;
+        }
+
+        h1 {
+            font-size: clamp(38px, 7vw, 64px);
+            line-height: 1.05;
+            letter-spacing: -2.5px;
+            margin-bottom: 18px;
+        }
+
+        .intro {
+            color: var(--muted);
+            font-size: 17px;
+            max-width: 720px;
+            margin-bottom: 12px;
+        }
+
+        .updated {
+            color: #6f7783;
+            font-size: 13px;
+            margin-bottom: 55px;
+        }
+
+        /* ---------------- SECTIONS ---------------- */
+
+        .policy-section {
+            margin-bottom: 18px;
+
+            background: linear-gradient(
+                145deg,
+                rgba(255,255,255,0.035),
+                rgba(255,255,255,0.015)
+            );
+
+            border: 1px solid var(--border);
+            border-radius: 18px;
+
+            padding: 30px;
+
+            transition:
+                border-color 0.2s ease,
+                background 0.2s ease,
+                transform 0.2s ease;
+        }
+
+        .policy-section:hover {
+            border-color: rgba(140, 255, 0, 0.14);
+            background: var(--card-hover);
+        }
+
+        .section-number {
+            color: var(--accent);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 23px;
+            letter-spacing: -0.5px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin: 22px 0 8px;
+        }
+
+        p {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 13px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        strong {
+            color: var(--text);
+        }
+
+        ul {
+            margin: 12px 0 15px 20px;
+        }
+
+        li {
+            color: var(--muted);
+            font-size: 15px;
+            margin-bottom: 7px;
+            padding-left: 4px;
+        }
+
+        li::marker {
+            color: var(--accent);
+        }
+
+        /* ---------------- HIGHLIGHT ---------------- */
+
+        .highlight {
+            margin-top: 18px;
+            padding: 17px 19px;
+
+            background: var(--accent-soft);
+            border-left: 3px solid var(--accent);
+
+            border-radius: 8px;
+
+            color: #cdd4dd;
+            font-size: 14px;
+        }
+
+        .highlight strong {
+            color: var(--accent);
+        }
+
+        /* ---------------- DATA GRID ---------------- */
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .data-card {
+            padding: 18px;
+
+            background: rgba(255,255,255,0.025);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .data-card-title {
+            font-weight: 700;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .data-card-text {
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* ---------------- FOOTER ---------------- */
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 35px 24px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 8px;
+        }
+
+        .footer-logo span {
+            color: var(--accent);
+        }
+
+        footer p {
+            font-size: 13px;
+            color: #666e79;
+        }
+
+        /* ---------------- MOBILE ---------------- */
+
+        @media (max-width: 700px) {
+
+            .nav-container {
+                padding: 15px 18px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            main {
+                padding: 45px 16px 70px;
+            }
+
+            h1 {
+                letter-spacing: -1.5px;
+            }
+
+            .intro {
+                font-size: 16px;
+            }
+
+            .policy-section {
+                padding: 23px 20px;
+                border-radius: 15px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            p,
+            li {
+                font-size: 14px;
+            }
+
+            .data-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+
+            <a href="#" class="logo">
+                LIFT<span>LEGENDS</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#information">Information</a></li>
+                <li><a href="#multiplayer">Multiplayer</a></li>
+                <li><a href="#camera">Camera & AI</a></li>
+                <li><a href="#children">Children</a></li>
+                <li><a href="#deletion">Deletion</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- CONTENT -->
+    <main>
+
+        <div class="top-label">
+            ◆ Lift Legends
+        </div>
+
+        <h1>Privacy Policy</h1>
+
+        <p class="intro">
+            Your privacy matters to us. This Privacy Policy explains how
+            Lift Legends handles information when you use the Game,
+            including its online multiplayer features, account system,
+            camera-based AI features, and in-game purchases.
+        </p>
+
+        <p class="updated">
+            Last updated: August 27, 2026
+        </p>
+
+
+        <!-- 1 -->
+        <section class="policy-section" id="information">
+
+            <div class="section-number">01</div>
+
+            <h2>Information We Collect</h2>
+
+            <p>
+                Lift Legends collects only the information necessary to
+                provide the Game's core functionality.
+            </p>
+
+            <div class="data-grid">
+
+                <div class="data-card">
+                    <div class="data-card-title">
+                        Game Login Identifiers
+                    </div>
+
+                    <div class="data-card-text">
+                        Used to authenticate players and associate their
+                        gameplay progress with their game account.
+                    </div>
+                </div>
+
+                <div class="data-card">
+                    <div class="data-card-title">
+                        Gameplay Data
+                    </div>
+
+                    <div class="data-card-text">
+                        Includes player progress and other information
+                        required to provide the Game's functionality.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="highlight">
+                <strong>No real-world identifying information is collected.</strong>
+                Lift Legends does not require your real name, physical
+                address, phone number, or similar real-world identifying
+                information to play the Game.
+            </div>
+
+        </section>
+
+
+        <!-- 2 -->
+        <section class="policy-section">
+
+            <div class="section-number">02</div>
+
+            <h2>Cloud Database</h2>
+
+            <p>
+                Lift Legends uses a cloud database hosted on
+                <strong>Microsoft Azure</strong>.
+            </p>
+
+            <p>
+                The database stores game login identifiers and player
+                progress and gameplay data.
+            </p>
+
+            <p>
+                Login information is used only to authenticate players
+                and associate gameplay progress with their game account.
+            </p>
+
+            <p>
+                We do not use this information for advertising or
+                profiling users.
+            </p>
+
+        </section>
+
+
+        <!-- 3 -->
+        <section class="policy-section" id="multiplayer">
+
+            <div class="section-number">03</div>
+
+            <h2>Online Multiplayer</h2>
+
+            <p>
+                Lift Legends includes online multiplayer functionality.
+            </p>
+
+            <p>
+                Multiplayer services are hosted using
+                <strong>Amazon Web Services (AWS)</strong> and use the
+                <strong>Mirror networking framework</strong>.
+            </p>
+
+            <p>
+                During multiplayer sessions, gameplay-related information
+                may be transmitted between players and game servers in
+                order to provide the multiplayer experience.
+            </p>
+
+            <p>
+                No personal or real-world identifying information is
+                collected during multiplayer sessions.
+            </p>
+
+        </section>
+
+
+        <!-- 4 -->
+        <section class="policy-section">
+
+            <div class="section-number">04</div>
+
+            <h2>Profile Pictures</h2>
+
+            <p>
+                Lift Legends allows players to select or create a profile
+                picture.
+            </p>
+
+            <p>
+                Profile pictures are <strong>not stored in our cloud
+                database</strong>.
+            </p>
+
+            <p>
+                The selected profile picture is stored locally on the
+                player's device. When a player joins a multiplayer server,
+                the profile picture may be temporarily transmitted to and
+                stored on the server machine so that it can be displayed
+                to other players.
+            </p>
+
+            <p>
+                When the player leaves the server, the server deletes the
+                stored profile picture.
+            </p>
+
+        </section>
+
+
+        <!-- 5 -->
+        <section class="policy-section">
+
+            <div class="section-number">05</div>
+
+            <h2>Camera & AI Gym Detection</h2>
+
+            <p>
+                Lift Legends uses the device camera for an AI-powered
+                feature that detects objects in an image to determine
+                whether the player is in a gym environment.
+            </p>
+
+            <p>
+                For example, the system may analyze objects such as
+                dumbbells, barbells, treadmills, exercise bikes, or other
+                gym-related equipment.
+            </p>
+
+            <div class="highlight">
+                <strong>Images used for this feature are not saved.</strong>
+                They are processed for the purpose of the detection
+                feature and are not stored in the cloud database.
+            </div>
+
+            <p>
+                We do not use these images for advertising, profiling,
+                facial recognition, or any other unrelated purpose.
+            </p>
+
+        </section>
+
+
+        <!-- 6 -->
+        <section class="policy-section">
+
+            <div class="section-number">06</div>
+
+            <h2>In-Game Currency & Purchases</h2>
+
+            <p>
+                Lift Legends includes an in-game currency system.
+            </p>
+
+            <p>
+                In-game currency may be used to purchase virtual
+                gameplay items, including potions and chests.
+            </p>
+
+            <p>
+                Players may also have the ability to purchase changes
+                or customization options related to their profile
+                picture.
+            </p>
+
+            <p>
+                Virtual items and currency are used only within the
+                Game and do not represent real-world monetary value
+                outside the Game.
+            </p>
+
+        </section>
+
+
+        <!-- 7 -->
+        <section class="policy-section">
+
+            <div class="section-number">07</div>
+
+            <h2>How We Use Information</h2>
+
+            <p>
+                Information collected by Lift Legends is used only
+                for purposes necessary to operate and improve the
+                Game.
+            </p>
+
+            <ul>
+                <li>Authenticating game accounts.</li>
+                <li>Saving and restoring player progress.</li>
+                <li>Providing online multiplayer functionality.</li>
+                <li>Providing gameplay features and virtual items.</li>
+                <li>Operating the camera-based AI gym detection feature.</li>
+                <li>Maintaining and securing the Game's services.</li>
+            </ul>
+
+            <p>
+                We do not use collected information for targeted
+                advertising or unrelated profiling.
+            </p>
+
+        </section>
+
+
+        <!-- 8 -->
+        <section class="policy-section">
+
+            <div class="section-number">08</div>
+
+            <h2>Data Sharing</h2>
+
+            <p>
+                We do <strong>not sell, rent, or share user data with
+                third parties for advertising or marketing purposes.</strong>
+            </p>
+
+            <p>
+                Data may be shared with service providers only when
+                necessary to operate the Game.
+            </p>
+
+            <p>
+                These providers may include cloud hosting and database
+                services such as Microsoft Azure and Amazon Web Services.
+            </p>
+
+            <p>
+                Such services are used to provide the technical
+                infrastructure required for the Game.
+            </p>
+
+        </section>
+
+
+        <!-- 9 -->
+        <section class="policy-section" id="children">
+
+            <div class="section-number">09</div>
+
+            <h2>Children's Privacy</h2>
+
+            <p>
+                Lift Legends may be played by users under the age of 13.
+            </p>
+
+            <p>
+                The Game does not knowingly require children to provide
+                real-world identifying information such as their name,
+                physical address, or phone number.
+            </p>
+
+            <p>
+                Lift Legends is a non-violent game.
+            </p>
+
+            <p>
+                The information collected by the Game is limited to what
+                is necessary for account authentication, gameplay,
+                multiplayer functionality, and other core Game features.
+            </p>
+
+            <p>
+                Parents or guardians who have questions about information
+                associated with a child's account may contact us using
+                the contact information provided below.
+            </p>
+
+        </section>
+
+
+        <!-- 10 -->
+        <section class="policy-section" id="deletion">
+
+            <div class="section-number">10</div>
+
+            <h2>Account Deletion</h2>
+
+            <p>
+                Players may delete their account at any time.
+            </p>
+
+            <p>
+                When an account is deleted, the account and associated
+                gameplay data will no longer be available for use in
+                the Game.
+            </p>
+
+            <div class="highlight">
+                <strong>Important:</strong>
+                Deleting your account means that your saved gameplay
+                progress and associated account data will be lost.
+            </div>
+
+        </section>
+
+
+        <!-- 11 -->
+        <section class="policy-section">
+
+            <div class="section-number">11</div>
+
+            <h2>Data Security</h2>
+
+            <p>
+                We take reasonable measures to protect information used
+                to operate Lift Legends and to prevent unauthorized
+                access, alteration, or disclosure.
+            </p>
+
+            <p>
+                However, no method of electronic storage or transmission
+                over the Internet can be guaranteed to be completely
+                secure.
+            </p>
+
+        </section>
+
+
+        <!-- 12 -->
+        <section class="policy-section">
+
+            <div class="section-number">12</div>
+
+            <h2>Third-Party Services</h2>
+
+            <p>
+                Lift Legends relies on third-party infrastructure
+                providers to operate certain services.
+            </p>
+
+            <ul>
+                <li>
+                    <strong>Microsoft Azure</strong> — cloud database
+                    infrastructure.
+                </li>
+
+                <li>
+                    <strong>Amazon Web Services (AWS)</strong> —
+                    multiplayer server infrastructure.
+                </li>
+
+                <li>
+                    <strong>Mirror</strong> — networking framework used
+                    for online multiplayer functionality.
+                </li>
+            </ul>
+
+            <p>
+                These services may process information as necessary to
+                provide the infrastructure used by the Game.
+            </p>
+
+        </section>
+
+
+        <!-- 13 -->
+        <section class="policy-section">
+
+            <div class="section-number">13</div>
+
+            <h2>Changes to This Privacy Policy</h2>
+
+            <p>
+                We may update this Privacy Policy from time to time
+                to reflect changes to the Game, our services, or
+                applicable legal requirements.
+            </p>
+
+            <p>
+                When changes are made, the updated policy will be
+                published on this page with a new "Last updated" date.
+            </p>
+
+        </section>
+
+
+        <!-- 14 -->
+        <section class="policy-section">
+
+            <div class="section-number">14</div>
+
+            <h2>Contact Us</h2>
+
+            <p>
+                If you have questions, concerns, or requests regarding
+                this Privacy Policy or your data, please contact the
+                Lift Legends development team.
+            </p>
+
+            <div class="highlight">
+                <strong>Contact:</strong>
+                <br>
+                drenkolab@gmail.com
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-logo">
+            LIFT<span>LEGENDS</span>
+        </div>
+
+        <p>
+            © 2026 Lift Legends. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
